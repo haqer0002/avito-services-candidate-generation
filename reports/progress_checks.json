@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-09-17T17:25:06",
+  "code_sha": "da2a8e9f6c5545a6",
+  "scope": "Local CPU checks with tiny synthetic models and data; no GPU speed or Recall estimate.",
+  "packages": {
+    "torch": "2.14.0",
+    "sentence-transformers": "5.1.1",
+    "transformers": "4.57.6"
+  },
+  "passed": [
+    "Notebook schema and Python syntax; clean outputs for a new Kaggle run",
+    "Real Sentence Transformers pool with two CPU processes; input order preserved",
+    "Partial embedding cache resumes with a different batch size; saved prefix unchanged",
+    "Interrupted encoding resumes; completed cache skips inference",
+    "Previous corpus vectors transferred; only missing texts encoded",
+    "Periodic waiting messages during a slow successful encode call",
+    "Original encoder exceptions propagate to the calling cell",
+    "Simulated worker exit and GPU timeout detected; slow CPU exempt from GPU deadline",
+    "Tiny E5 training performs optimizer steps; completed training reused",
+    "All nine experiments and final pipeline execute on synthetic data",
+    "Synthetic answer format validated; CPU replay byte-identical; query-ID independence"
+  ],
+  "not_run": [
+    "Full-data GPU training",
+    "Live Kaggle GPU watchdog test",
+    "Platform submission"
+  ]
+}

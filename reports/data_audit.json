@@ -1,0 +1,29 @@
+{
+  "seed": 20260916,
+  "train_rows": 497673,
+  "train_unique_items": 344825,
+  "train_unique_query_texts": 73706,
+  "benchmark_items": 189212,
+  "benchmark_queries": 2452,
+  "benchmark_texts_seen_in_train": 919,
+  "benchmark_items_seen_in_train": 18142,
+  "train_exact_location_fraction": 0.8310195650557696,
+  "core_rows": 417921,
+  "validation_corpus_size": 197953,
+  "split_query_counts": {
+    "fit": 6000,
+    "dev": 1500,
+    "test": 1500
+  },
+  "mean_relevant_items": {
+    "dev": 1.05,
+    "fit": 1.0545,
+    "test": 1.0553333333333332
+  },
+  "protocol": "Complete normalized query text holdout; one search context per text; full benchmark background plus held-out positive documents.",
+  "data_sha256": {
+    "train.parquet": "e150ab7a5c98769f643b95ee3a02dc0f664b647facd69a7d280ec6d48ca554a7",
+    "benchmark_items.parquet": "193b3a3961464620cbf8d8797152b7f90cae1826ca749fb7817a210984a09899",
+    "benchmark_queries.parquet": "e49de4fb76f03979a4af96034817767d39ae5de9f94e254fed028243188dda06"
+  }
+}

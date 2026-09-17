@@ -1,0 +1,13 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+data/
+cache/
+models/
+logs/
+*.tmp
+iteration_report.zip
+answer_replay.csv

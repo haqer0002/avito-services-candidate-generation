@@ -1,0 +1,47 @@
+{
+  "source": "Saved outputs of the completed Kaggle run in solution.ipynb. Table values rounded to six decimals by pandas.",
+  "selected_experiment": "gemma_calibrated",
+  "dev": {
+    "queries": 1500,
+    "recall_at_50": 0.9404444444444443,
+    "union_recall": 0.976333
+  },
+  "warm": {
+    "queries": 500,
+    "recall_at_50": 0.9443333333333334
+  },
+  "holdout": {
+    "queries": 1500,
+    "recall_at_50": 0.935389,
+    "union_recall": 0.983389
+  },
+  "platform": {
+    "queries": 2452,
+    "recall_at_50": 0.89537,
+    "source": "Score reported by the user after submitting answer.csv to the evaluation platform."
+  },
+  "environment": {
+    "python": "3.12.13",
+    "platform": "Kaggle Linux",
+    "gpus": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "gpu_memory_gib_each": 15,
+    "ram_gib": 30,
+    "source": "Notebook metadata, saved device output and Kaggle resource screenshots."
+  },
+  "performance": {
+    "device": "cpu",
+    "queries": 20,
+    "p50_ms": 563.516357,
+    "p95_ms": 603.980787,
+    "scope": "Retrieval and CatBoost with preencoded query. Excludes model/index loading and query encoding."
+  },
+  "submission_validation": {
+    "valid_format": true,
+    "identical_saved_artifact_replay": true,
+    "source": "Successful final notebook cell."
+  },
+  "selection_key": "cf4a11a09e1587a6a6e5594dbe00fda4"
+}

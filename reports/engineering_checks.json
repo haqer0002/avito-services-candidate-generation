@@ -1,0 +1,83 @@
+{
+  "scope": "Инженерные проверки на искусственных данных; на данных задания проверено только разбиение. Полный GPU-прогон выполняет пользователь.",
+  "version": "notebook-v4",
+  "notebook_cells": 37,
+  "code_lines": 1985,
+  "functions": 16,
+  "custom_classes": 0,
+  "standalone_notebook": true,
+  "checks_passed": [
+    "notebook_schema_syntax_black_and_pinned_dependencies",
+    "old_outputs_cleared",
+    "previous_report_and_input_data_preserved_byte_for_byte",
+    "real_data_dev_test_contexts_and_labels_equal_previous_split",
+    "real_data_warm_contexts_removed_entirely_and_texts_still_in_core",
+    "synthetic_end_to_end_nine_variants_seven_candidate_pools",
+    "synthetic_dev_keeps_holdout_closed",
+    "real_tiny_gemma3_bidirectional_attention_pooling_two_dense_layers_normalization",
+    "real_cached_contrastive_loss_updates_tiny_encoder_weights",
+    "contrastive_batches_have_no_known_positive_conflicts_or_duplicate_passages",
+    "finetuning_does_not_use_fit_dev_test_texts_or_warm_contexts",
+    "optimizer_steps_recorded_and_completed_finetune_reused",
+    "mixed_alphabet_cleanup_preserves_latin_words",
+    "negative_mining_preserves_multiple_positives_and_changes_hard_negatives",
+    "labels_do_not_change_candidates_or_unlabelled_features",
+    "macro_recall_with_multiple_positives_and_stable_ties",
+    "synthetic_final_hybrid_ranker_finetuned_ranker_and_retrieval_branches",
+    "query_id_does_not_affect_predictions",
+    "csv_validation_rejects_malformed_unknown_duplicate_ids",
+    "identical_csv_from_two_replays",
+    "hybrid_and_finetuned_csv_identical_in_fresh_offline_processes",
+    "gemma_two_cpu_processes_preserve_input_order",
+    "gemma_resume_after_batch_size_change_and_keyboard_interrupt",
+    "completed_embedding_cache_reused_after_batch_change",
+    "gemma_corpus_extension_encodes_only_new_texts_and_preserves_cached_rows",
+    "legacy_e5_corpus_extension_encodes_only_new_texts_and_preserves_cached_rows",
+    "nonempty_error_diagnostics_confidence_and_latency_reports"
+  ],
+  "real_data_split_audit": {
+    "fit_texts": 6000,
+    "fit_contexts": 11723,
+    "dev": 1500,
+    "test": 1500,
+    "warm": 500,
+    "core_rows": 417331,
+    "local_corpus": 203683,
+    "previous_corpus": 197953
+  },
+  "synthetic_data": {
+    "items": {
+      "dev_stress": 480,
+      "final_branches": 120
+    },
+    "train_pairs": 160,
+    "benchmark_queries": 4
+  },
+  "notebook_sha256": "f76a80c4a3d478e77d57d09f2135ad8b0dcd668a05c8c89ed5ad87a0641e1a24",
+  "code_sha256": "2b5871c0792d9b9a99892b13eec57228cb7261316dddec2e14687502705a7f3a",
+  "test_environment": {
+    "torch": "2.14.0",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.1.1",
+    "catboost": "1.2.8"
+  },
+  "full_gpu_run_completed": false,
+  "task_recall_at_50": null,
+  "previous_iteration_dev_recall_at_50": 0.9337777777777777,
+  "platform_submissions": 0,
+  "gemma_performance": {
+    "batch_size_per_device": 64,
+    "multi_gpu_default": true,
+    "chunk_size_per_worker": 1024,
+    "tested_pool_devices": [
+      "cpu",
+      "cpu"
+    ],
+    "gpu_throughput_measured": false
+  },
+  "limitations": [
+    "Инженерные тесты не измеряют качество на реальных данных.",
+    "Повтор из артефактов проверен; новое обучение на другом GPU не обещает побайтового совпадения.",
+    "Проверка multi-GPU требует следующего запуска в Kaggle."
+  ]
+}

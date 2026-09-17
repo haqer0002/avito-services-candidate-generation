@@ -1,0 +1,68 @@
+{
+  "status": "dev; holdout не использован для подбора",
+  "selected": {
+    "method": "CatBoost depth=6",
+    "iterations": 300,
+    "recall_at_50": 0.923111111111111,
+    "kind": "ranker",
+    "params": {
+      "depth": 6,
+      "learning_rate": 0.06,
+      "iterations": 300,
+      "l2_leaf_reg": 10
+    }
+  },
+  "union_recall": 0.9596666666666667,
+  "config": {
+    "version": "notebook-v2",
+    "seed": 20260916,
+    "split_sizes": {
+      "fit": 6000,
+      "dev": 1500,
+      "test": 1500
+    },
+    "lexical": {
+      "description_chars": 2400,
+      "params_chars": 900,
+      "word_features": 300000,
+      "char_features": 180000
+    },
+    "top_k": {
+      "bm25": 200,
+      "bm25_geo": 200,
+      "char": 100,
+      "char_geo": 100,
+      "dense": 200,
+      "dense_geo": 200,
+      "prior": 100,
+      "history": 100
+    },
+    "max_length": 224,
+    "batch_size": 64,
+    "trials": [
+      {
+        "depth": 6,
+        "learning_rate": 0.06,
+        "iterations": 800,
+        "l2_leaf_reg": 10
+      },
+      {
+        "depth": 8,
+        "learning_rate": 0.05,
+        "iterations": 800,
+        "l2_leaf_reg": 15
+      }
+    ],
+    "model": "intfloat/multilingual-e5-base",
+    "revision": "d128750597153bb5987e10b1c3493a34e5a4502a"
+  },
+  "data_sha256": {
+    "train.parquet": "e150ab7a5c98769f643b95ee3a02dc0f664b647facd69a7d280ec6d48ca554a7",
+    "benchmark_queries.parquet": "e49de4fb76f03979a4af96034817767d39ae5de9f94e254fed028243188dda06",
+    "benchmark_items.parquet": "193b3a3961464620cbf8d8797152b7f90cae1826ca749fb7817a210984a09899"
+  },
+  "platform_submissions": 0,
+  "python": "3.12.13",
+  "torch": "2.10.0+cu128",
+  "device": "cuda"
+}

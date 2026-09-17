@@ -1,0 +1,18 @@
+# Рекомендуется Python 3.12. PyTorch устанавливается отдельно под CPU или CUDA.
+# Команды установки PyTorch и Jupyter приведены в README.md.
+numpy==2.2.6
+pandas==2.2.3
+pyarrow==19.0.1
+scipy==1.15.3
+scikit-learn==1.6.1
+catboost==1.2.8
+transformers==4.57.6
+sentence-transformers==5.1.1
+huggingface-hub==0.34.4
+tokenizers==0.22.0
+safetensors==0.5.3
+sentencepiece==0.2.0
+snowballstemmer==3.0.1
+joblib==1.4.2
+tqdm==4.67.1
+matplotlib==3.10.1
