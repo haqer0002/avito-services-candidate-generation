@@ -205,4 +205,4 @@ CSV проверяется на полноту запросов, формат и
 [CatBoost PairLogit](https://catboost.ai/docs/en/concepts/loss-functions-ranking#pairlogit),
 PyTorch, Transformers, NumPy, pandas, SciPy, PyArrow, Snowball, joblib и Matplotlib.
 Ревизии моделей закреплены в ноутбуке. Обучение и поиск выполняются в своей среде
-без внешних API. Интернет используется только для установки пакетов и получения весов.
+без внешних API.
